@@ -90,7 +90,7 @@
         .hero-text { flex: 1.2; text-align: left; }
         .hero-image { flex: 0.8; display: flex; justify-content: flex-end; }
         
-        /* Adjusted headline to be uniformly smaller */
+        /* Headline updated to be uniformly sized */
         .hero-text h1 { font-size: clamp(2.1rem, 3vw, 3rem); font-weight: 800; line-height: 1.3; margin-bottom: 1.5rem; }
         .hero-text p { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2.5rem; max-width: 600px; }
         .hero-tags { display: flex; justify-content: flex-start; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
@@ -341,18 +341,18 @@
             <div class="container">
                 <h2 class="section-title reveal">Dashboard Solutions</h2>
                 <div class="dashboard-container">
+                    
                     <article class="dashboard-item glass-panel reveal">
-                        <div class="dashboard-visual">
-                            <div class="mock-chart">
-                                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
-                            </div>
+                        <div class="dashboard-visual" style="padding: 0; border: none;">
+                            <img src="images/dashboard1.jpg" alt="Corporate Performance Dashboard Screenshot" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; border: 1px solid var(--glass-border);">
                         </div>
                         <div class="dashboard-info">
                             <h3>Corporate Performance Metrics</h3>
                             <p>An interactive Power BI dashboard featuring dynamic DAX measures to track KPIs across multiple geographic regions. Utilizing predictive machine learning models to forecast Q4 growth.</p>
-                            <a href="#" class="btn btn-primary">View Interactive Dashboard</a>
+                            <a href="sales-report.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Full Report (PDF)</a>
                         </div>
                     </article>
+                    
                     <article class="dashboard-item glass-panel reveal">
                         <div class="dashboard-visual" style="background: linear-gradient(135deg, rgba(15,23,42,0.9), rgba(0,210,255,0.2));">
                             <div class="mock-chart" style="border-radius: 50%; width: 150px; height: 150px; border: 15px solid var(--ds-blue); border-top-color: var(--pbi-yellow); border-right-color: var(--pbi-yellow);"></div>
@@ -363,6 +363,7 @@
                             <a href="#" class="btn btn-primary">View Interactive Dashboard</a>
                         </div>
                     </article>
+                    
                 </div>
             </div>
         </section>
